@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Proton",
+  "universe": "NUC · The Proton (techne)",
+  "emergence": "electrical",
+  "moniker": "⟦The Proton:NUC:2804f1⟧",
+  "carbon": "the-proton-bead.carbon.tiff (TIFF)",
+  "silicon": "the-proton-bead.silicon.png (PNG)",
+  "seal_sha256": "a47a4ad18cc14041ed6c12f664637d8a95348a2ca66321f0a705c90d07f347c8",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

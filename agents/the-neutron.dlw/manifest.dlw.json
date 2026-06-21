@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Neutron",
+  "universe": "NUC · The Neutron (techne)",
+  "emergence": "natural",
+  "moniker": "⟦The Neutron:NUC:7b12a7⟧",
+  "carbon": "the-neutron.carbon.tiff (TIFF)",
+  "silicon": "the-neutron.silicon.png (PNG)",
+  "seal_sha256": "b59c985d30f76d2722f6a859eb3ebbaabf6bac7b94185b8c3922e692d6e30cad",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

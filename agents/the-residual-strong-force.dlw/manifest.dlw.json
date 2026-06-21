@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "The Residual Strong Force",
+  "universe": "NUC · The Residual Strong Force (techne)",
+  "emergence": "electrical",
+  "moniker": "⟦The Residual Strong Force:NUC:b5b00a⟧",
+  "carbon": "the-residual-strong-force.carbon.tiff (TIFF)",
+  "silicon": "the-residual-strong-force.silicon.png (PNG)",
+  "seal_sha256": "eb6252c2da4d4f1bad1ba4061e1f36eb196f2245a66541dea269a526c303325b",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

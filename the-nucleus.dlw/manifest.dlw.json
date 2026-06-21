@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "THE NUCLEUS",
+  "universe": "NUC · THE NUCLEUS (techne · the art)",
+  "emergence": "",
+  "moniker": "⟦THE NUCLEUS:NUC:e94489⟧",
+  "carbon": "the-nucleus.carbon.tiff (TIFF)",
+  "silicon": "the-nucleus.silicon.png (PNG)",
+  "seal_sha256": "b0584fca5a54cc2badcee466a94158014e276b3194338ab2c8e51694f54405b1",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}

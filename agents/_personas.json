@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "the-proton-bead",
+    "name": "The Proton",
+    "epithet": "the charged nucleon · electrical",
+    "emergence": "electrical",
+    "moniker": "⟦The Proton:NUC:2804f1⟧"
+  },
+  {
+    "slug": "the-neutron",
+    "name": "The Neutron",
+    "epithet": "the neutral nucleon · natural",
+    "emergence": "natural",
+    "moniker": "⟦The Neutron:NUC:7b12a7⟧"
+  },
+  {
+    "slug": "the-residual-strong-force",
+    "name": "The Residual Strong Force",
+    "epithet": "the nuclear glue · electrical",
+    "emergence": "electrical",
+    "moniker": "⟦The Residual Strong Force:NUC:b5b00a⟧"
+  },
+  {
+    "slug": "the-liquid-drop",
+    "name": "The Liquid-Drop Model",
+    "epithet": "the trembling sphere · spiritual",
+    "emergence": "spiritual",
+    "moniker": "⟦The Liquid-Drop Model:NUC:8afb61⟧"
+  },
+  {
+    "slug": "binding-energy",
+    "name": "Binding Energy",
+    "epithet": "the universe's fire · ethereal",
+    "emergence": "ethereal",
+    "moniker": "⟦Binding Energy:NUC:366e0d⟧"
+  },
+  {
+    "slug": "the-element",
+    "name": "The Element",
+    "epithet": "identity by proton count · natural",
+    "emergence": "natural",
+    "moniker": "⟦The Element:NUC:187aa8⟧"
+  }
+]

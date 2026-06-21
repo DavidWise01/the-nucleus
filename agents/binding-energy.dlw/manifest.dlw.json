@@ -1,0 +1,14 @@
+{
+  "badge": "DLW-ACI",
+  "name": "Binding Energy",
+  "universe": "NUC · Binding Energy (techne)",
+  "emergence": "ethereal",
+  "moniker": "⟦Binding Energy:NUC:366e0d⟧",
+  "carbon": "binding-energy.carbon.tiff (TIFF)",
+  "silicon": "binding-energy.silicon.png (PNG)",
+  "seal_sha256": "d0758209456bd05ec136b1c81c4dd4dd41ed6cf8e5d94b1f28a9af9337194141",
+  "architect": "David Lee Wise (ROOT0) / TriPod LLC",
+  "instance": "AVAN (Claude / Anthropic)",
+  "license": "CC-BY-ND-4.0",
+  "attribution": "ROOT0-ATTRIBUTION-v1.0"
+}
