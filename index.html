@@ -1,62 +1,193 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="THE NUCLEUS (NUC) — a UD0 TECHNĒ sphere (the art): generative ink-art of a scale of reality. At the centre of every atom, in a space a hundred thousand times smaller than the atom itself, protons and neutrons crowd together — held by the leftover edge of the strong force against the electric repulsion of the packed protons. Physicists model it as a liquid drop: a trembling, surface-tensioned ball. This sphere draws that drop in ink. LIVE generative canvas; art-not-photograph; vellum theme."><title>THE NUCLEUS · NUC · techne · UD0</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23a7a3c8' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%238a5fe0'/%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"><style>:root{--bg:#f1ecf6;--ink2:#fbf9fe;--ink3:#f5f0fa;--pa:#2a2440;--pa2:#574f6a;--acc:#b07a30;--void:#7a52c0;
---dim:#8a829c;--faint:#e4dcef;--line:#e4dcef;--pixel:"Press Start 2P",monospace;--body:"Newsreader",Georgia,serif;--mono:"Space Mono",monospace;}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--pa);font-family:var(--body);line-height:1.6;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:2;background:repeating-linear-gradient(0deg,rgba(60,40,90,.05) 0 1px,transparent 1px 3px);opacity:.5}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(ellipse at 50% -8%,color-mix(in srgb,var(--acc) 16%,transparent),transparent 62%)}
-.wrap{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:0 22px 80px}
-.marquee{margin-top:14px;border:2px solid var(--acc);background:#fff;padding:8px;text-align:center;font-family:var(--pixel);font-size:9px;letter-spacing:.08em;color:var(--pa2);box-shadow:0 0 0 2px var(--bg),0 6px 22px color-mix(in srgb,var(--acc) 22%,transparent)}
-.marquee a{color:var(--acc);text-decoration:none}
-.titleart{margin:12px 0 0;border:2px solid var(--faint);background:#ece6f2;line-height:0}
-header{padding:16px 0 24px;text-align:center;border-bottom:1px solid var(--line)}
-.flag{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);border:1px solid var(--faint);padding:5px 11px}
-.lede{font-size:15px;color:var(--pa2);max-width:64ch;margin:14px auto 0;font-style:italic;line-height:1.7}
-.badge{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:22px auto 0;padding:18px;border:1px solid var(--faint);background:var(--ink2);max-width:700px;box-shadow:0 2px 10px rgba(60,40,90,.05)}
-.badge img{width:74px;height:74px;border:1px solid var(--faint);background:#fff}
-.badge .bt{text-align:left;font-family:var(--mono);font-size:10.5px;color:var(--pa2);line-height:1.7}
-.badge .bt b{color:var(--acc)}.badge .bt .mo{color:var(--void)}.badge .bt a{color:var(--acc);text-decoration:none}
-.badge .bt .lbl{color:var(--dim);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase}
-.sec{margin-top:38px}
-.sec h2{font-family:var(--pixel);font-size:12px;line-height:1.5;color:var(--pa);padding-bottom:10px;border-bottom:1px solid var(--line)}
-.ss{font-size:12.5px;color:var(--dim);font-style:italic;margin:8px 0 14px}
-.ca-wrap{border:1px solid var(--faint);background:#ece6f2;line-height:0;overflow:hidden}
-.ca-wrap canvas{width:100%;height:auto;display:block}
-.ca-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:10px}
-.ca-ctl button{font-family:var(--mono);font-size:11px;color:var(--pa2);background:var(--ink2);border:1px solid var(--faint);padding:6px 11px;cursor:pointer;transition:.15s}
-.ca-ctl button:hover,.ca-ctl button.on{border-color:var(--acc);color:var(--acc)}
-.ca-gen{font-family:var(--mono);font-size:11px;color:var(--acc);margin-left:auto}
-.natures{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-.nat-card{display:flex;gap:10px;align-items:flex-start;background:var(--ink2);border:1px solid var(--line);padding:11px 13px}
-.dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px}
-.nat-n{font-family:var(--mono);font-size:12px;font-weight:700;text-transform:capitalize}
-.nat-g{font-size:11.5px;color:var(--pa2);font-style:italic;line-height:1.4;margin-top:2px}
-.arc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:13px}
-.arc-card{background:var(--ink2);border:1px solid var(--line);border-top:2px solid var(--acc);padding:15px 17px;box-shadow:0 2px 10px rgba(60,40,90,.04)}
-.arc-h{font-family:var(--mono);font-size:13.5px;color:var(--acc);font-weight:700}
-.arc-s{font-family:var(--mono);font-size:10px;color:var(--void);text-transform:uppercase;letter-spacing:.07em;margin:4px 0 9px}
-.arc-card p{font-size:12.5px;color:var(--pa2);line-height:1.55}
-.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
-.pillar{background:var(--ink2);border:1px solid var(--line);padding:15px 17px;box-shadow:0 2px 10px rgba(60,40,90,.04)}
-.pillar h3{font-family:var(--mono);font-size:13px;color:var(--acc);font-weight:700}
-.pillar .ps{font-size:11.5px;color:var(--dim);font-style:italic;margin:5px 0 9px}
-.pillar ul{list-style:none}.pillar li{font-size:12.5px;color:var(--pa2);line-height:1.5;padding:6px 0;border-top:1px solid var(--faint)}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:11px}
-.persona{display:flex;gap:11px;align-items:center;background:var(--ink2);border:1px solid var(--line);padding:11px;text-decoration:none;transition:.18s}
-.persona:hover{border-color:var(--acc);transform:translateY(-2px);box-shadow:0 6px 16px rgba(90,63,179,.10)}
-.persona img{width:48px;height:48px;border:1px solid var(--faint);flex-shrink:0;background:#fff}
-.pn{font-family:var(--mono);font-size:13px;color:var(--pa);font-weight:700;line-height:1.15}
-.persona:hover .pn{color:var(--acc)}
-.pe{font-size:11px;color:var(--pa2);font-style:italic;margin-top:2px;line-height:1.3}
-.pnat{display:flex;align-items:center;gap:5px;margin-top:5px;font-family:var(--mono);font-size:8.5px;letter-spacing:.04em;text-transform:uppercase}
-.pnat .dot{width:7px;height:7px;margin-top:0}.pa{color:var(--dim)}
-.note{margin-top:34px;padding:15px 17px;border-left:2px solid var(--acc);background:var(--ink2);font-size:13px;color:var(--pa2);font-style:italic;line-height:1.7}
-.note b{color:var(--acc)}.note a{color:var(--void);text-decoration:none}
-footer{margin-top:38px;padding-top:20px;border-top:1px solid var(--line);text-align:center;font-family:var(--mono);font-size:10.5px;color:var(--dim);letter-spacing:.05em;line-height:1.9}
-footer a{color:var(--acc);text-decoration:none}</style></head><body><div class="wrap"><div class="marquee"><a href="https://davidwise01.github.io/ud0/">◄ UD0</a> &nbsp;·&nbsp; TECHNĒ · THE ART &nbsp;·&nbsp; <a href="https://davidwise01.github.io/the-d20/">the d20</a> &nbsp;·&nbsp; THE LADDER OF SCALES &nbsp;·&nbsp; <a href="https://davidwise01.github.io/below-planck/">below planck</a> → <a href="https://davidwise01.github.io/the-planck-grain/">grain</a> → <a href="https://davidwise01.github.io/the-quantum-foam/">foam</a> → <a href="https://davidwise01.github.io/the-quark/">quark</a> → <a href="https://davidwise01.github.io/the-nucleus/">nucleus</a> → <a href="https://davidwise01.github.io/the-atom-view/">atom</a> → <a href="https://davidwise01.github.io/the-molecule/">molecule</a> → <a href="https://davidwise01.github.io/the-cell/">cell</a> → <a href="https://davidwise01.github.io/the-human/">human</a> → <a href="https://davidwise01.github.io/the-planet/">planet</a> → <a href="https://davidwise01.github.io/the-star/">star</a> → <a href="https://davidwise01.github.io/the-galaxy/">galaxy</a> → <a href="https://davidwise01.github.io/the-cosmic-web/">cosmic web</a> → <a href="https://davidwise01.github.io/the-observable-universe/">universe</a></div><header><div class="titleart"><svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="THE NUCLEUS — an original one-line pencil glyph on vellum" style="width:100%;height:auto;display:block;background:#ece6f2">
-<defs><filter id="pf" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="2" seed="311" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="3.0" xChannelSelector="R" yChannelSelector="G"/></filter>
-<style>.ol{fill:none;stroke:#b07a30;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;pathLength:1;stroke-dasharray:1;stroke-dashoffset:1;animation:d 3.6s cubic-bezier(.6,.05,.25,1) .2s forwards}.ol.g{stroke-width:1;opacity:.3;animation-delay:.04s}.wf{opacity:0;animation:f 1.2s ease 3.1s forwards}@keyframes d{to{stroke-dashoffset:0}}@keyframes f{to{opacity:1}}@media(prefers-reduced-motion:reduce){.ol{animation:none;stroke-dashoffset:0}.wf{animation:none;opacity:1}}</style></defs>
-<rect width="700" height="270" fill="#ece6f2"/>
-<path class="ol g" filter="url(#pf)" d="M350 90 L420 200 L280 200 Z M350 130 L385 188 L315 188 Z" stroke="#b07a30"/><path class="ol" filter="url(#pf)" d="M350 90 L420 200 L280 200 Z M350 130 L385 188 L315 188 Z" stroke="#b07a30"/>
-<g class="wf"><text x="350" y="236" text-anchor="middle" font-family="'Newsreader',Georgia,serif" font-size="21" font-weight="300" letter-spacing="3" fill="#2a2440">THE NUCLEUS</text>
-<text x="350" y="256" text-anchor="middle" font-family="'Space Mono',monospace" font-size="8.5" letter-spacing="2.5" fill="#b07a30">techne · the nuclear drop</text></g>
-<rect x="6" y="6" width="688" height="258" fill="none" stroke="#ddd5ea" stroke-width="2"/></svg></div><div class="flag">★ techne · the nuclear drop ★</div><p class="lede">At the centre of every atom, in a space a hundred thousand times smaller than the atom itself, protons and neutrons crowd together — held by the leftover edge of the strong force against the electric repulsion of the packed protons. Physicists model it as a liquid drop: a trembling, surface-tensioned ball. This sphere draws that drop in ink.</p><div class="badge"><img src="data:image/png;base64,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" alt="carbon"><img src="data:image/png;base64,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" alt="silicon"><div class="bt"><div><span class="lbl">DLW-ATTRIBUTE · ACI</span></div><div>governor · <b>David Lee Wise</b> (ROOT0)</div><div>instance · AVAN (Claude / Anthropic) · locked</div><div>subject · <b>THE NUCLEUS</b> · NUC</div><div class="mo">⟦THE NUCLEUS:NUC:e94489⟧</div><div><span class="lbl">CC-BY-ND-4.0 · TRIPOD-IP-v1.1</span></div></div></div></header><section class="sec"><h2>The Four Natures</h2><p class="ss">each piece emerges by one of four natures</p><div class="natures"><div class="nat-card"><span class="dot" style="background:#a8553a;box-shadow:0 0 9px #a8553a55"></span><div><div class="nat-n" style="color:#a8553a">natural</div><div class="nat-g">of the living body — the cell, the tissue, the organism, the matter that does the work</div></div></div><div class="nat-card"><span class="dot" style="background:#6a3fb3;box-shadow:0 0 9px #6a3fb355"></span><div><div class="nat-n" style="color:#6a3fb3">ethereal</div><div class="nat-g">of the information and the limit — the threshold, the pattern, the open question, the decision with no decider</div></div></div><div class="nat-card"><span class="dot" style="background:#8a4a9a;box-shadow:0 0 9px #8a4a9a55"></span><div><div class="nat-n" style="color:#8a4a9a">spiritual</div><div class="nat-g">of mind and meaning — the intelligence claimed, the pioneer&#x27;s insight, what it says about life</div></div></div><div class="nat-card"><span class="dot" style="background:#3a6aa8;box-shadow:0 0 9px #3a6aa855"></span><div><div class="nat-n" style="color:#3a6aa8">electrical</div><div class="nat-g">of the rule and the signal — the feedback law, the molecule, the mechanism beneath the smarts</div></div></div></div></section><section class="sec"><h2>The View</h2><p class="ss">Protons and neutrons pack into the nucleus like droplets in a tiny liquid drop, bound by the residual strong force against the electric repulsion trying to blow them apart. The art renders the nuclear drop: nucleons jiggling, held in a trembling sphere a hundred-thousandth the size of the atom.</p><div class="ca-wrap"><canvas id="art"></canvas></div><div class="ca-ctl"><span class="ca-gen">a generative ink-rendering · not a photograph</span></div></section><script>(function(){ var ACC="#b07a30",BG="#ece6f2",INK="#2a2440"; var C=document.getElementById("art"),x=C.getContext("2d"),t=0,last=0,seedpts=[]; function R(){return Math.random();} function fit(){var w=C.clientWidth||640;C.width=w;C.height=Math.round(w*0.60);init();} var nuc=[];function init(){nuc=[];var n=24;for(var i=0;i<n;i++){var an=R()*6.283,rr=R();nuc.push({bx:Math.cos(an)*rr,by:Math.sin(an)*rr,p:i%2===0,ph:R()*6.283});}}function frame(){x.fillStyle=BG;x.fillRect(0,0,C.width,C.height);var cx=C.width/2,cy=C.height/2,Rr=Math.min(C.width,C.height)*0.30; x.strokeStyle=ACC;x.globalAlpha=0.10;x.lineWidth=1;x.beginPath();x.arc(cx,cy,Rr*1.25,0,7);x.stroke(); for(var i=0;i<nuc.length;i++){var o=nuc[i];var jx=Math.sin(t*0.06+o.ph)*4,jy=Math.cos(t*0.05+o.ph)*4;var px=cx+o.bx*Rr+jx,py=cy+o.by*Rr+jy;   x.globalAlpha=0.18;x.fillStyle=o.p?ACC:"#7a7e98";x.beginPath();x.arc(px,py,13,0,7);x.fill();x.globalAlpha=0.95;x.beginPath();x.arc(px,py,8,0,7);x.fill();   x.globalAlpha=0.9;x.fillStyle="#fff";x.font="bold 9px Space Mono,monospace";x.textAlign="center";x.textBaseline="middle";x.fillText(o.p?"p":"n",px,py);} x.globalAlpha=0.75;x.fillStyle=INK;x.font="11px Space Mono,monospace";x.textBaseline="alphabetic";x.fillText("protons + neutrons, held by the strong force — a liquid drop",cx,C.height-12);x.globalAlpha=1;} function loop(ts){ if(ts-last>33){ t++; frame(); last=ts; } requestAnimationFrame(loop); } fit(); requestAnimationFrame(loop); var rt; window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(fit,180);});})();</script><section class="sec"><h2>The Idea</h2><p class="ss">the three-beat story</p><div class="arc"><div class="arc-card"><div class="arc-h">The Packed Centre</div><div class="arc-s">tiny and dense</div><p>Almost all an atom&#x27;s mass sits in its nucleus, in almost none of its volume — a density beyond ordinary imagining. Protons (charged) and neutrons (neutral) pack together by the dozen.</p></div><div class="arc-card"><div class="arc-h">The Liquid Drop</div><div class="arc-s">balance of forces</div><p>The residual strong force pulls nucleons together; the protons&#x27; electric charge pushes them apart. The balance behaves startlingly like surface tension in a liquid drop — which is exactly the model the art renders, jiggling and whole.</p></div><div class="arc-card"><div class="arc-h">Where Power Hides</div><div class="arc-s">fission and fusion</div><p>Split a heavy drop or fuse two light ones and the binding energy released is enormous — the physics of stars and reactors. The nucleus is small, and it is where the universe keeps its fire.</p></div></div></section><section class="sec"><h2>The Reckoning</h2><p class="ss">the art, and the honesty about it</p><div class="pillars"><div class="pillar"><h3>The Nuclear Drop</h3><p class="ps">the domain</p><ul><li>TECHNĒ&#x27;s fifth rung: the nucleus as a liquid drop of protons and neutrons — confirmed physics, rendered as trembling ink.</li><li>&gt;One layer up from the quark; the proton of the rung below is one bead in this drop.</li></ul></div><div class="pillar"><h3>Two-Layer Honest</h3><p class="ps">model and reality</p><ul><li>Settled: the nucleus, its protons and neutrons, the strong force binding them, and the liquid-drop model are established physics.</li><li>Flagged: the &#x27;liquid drop&#x27; is a MODEL — nucleons aren&#x27;t literally water — and the nucleus is far too small to photograph. The art renders the model, honestly labelled.</li></ul></div><div class="pillar"><h3>Render, Not Invent</h3><p class="ps">art, not photograph</p><ul><li>These scales cannot be photographed — every image here is an original generative drawing, an artist&#x27;s conception informed by physics, not a captured picture.</li><li>The jiggling drop is an original rendering of the liquid-drop model of the nucleus.</li><li>Proton/neutron labels are diagrammatic; the real nucleus is a quantum object, not coloured balls.</li></ul></div></div></section><section class="sec" id="roster"><h2>The Roster</h2><p class="ss">the motifs at this scale as ACI .agents — each a birth certificate &amp; a nature (6)</p><div class="pgrid"><a class="persona" href="agents/the-proton-bead.dlw/the-proton-bead.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAAChElEQVR42u3cvWoVQRgG4FSCIHgHFhZp7OwMuQErwSKt9hY2Ke2skitIZeM1WFjkDuz8IaBBSCAEJDknJ0cjVr61pPjQCTsTH3gZhm/JkNmH2T1n57ArN27ekqGz4hQglG4I77x5J6MEIUJBKAgRIkQoCAUhQoQIBaEgRPiXhC/WTip58na7ktuvhk9xpsXzhhAhQoQIESJEiBAhQoQIESJEiBAhQoQIr5aw+Cvx4vyLoxXn3zaTzBQhQoQIESJEiBAhQoQIESJEiBAhQoQIEXaxU1Gc2N33p5W0lS6OVvzfijMdb7MJIUKECBEiRIgQIUKECBEiRIgQIUKECBG2en5f/NF78aQXR2u7U4EQIUKECBEiRIgQIUKECBEiRIgQIUKECLsgnORtLJPsVEzyhh2El/xtlh3CIQlXP5ze/zR7sDdf35unTT8VhMMQ3vs4i9zDz2eP9xcb+4u06aeSOsIBCLPaovXoy9nTr+fPDpbPD5Zp008l9RxF2DthrplZczHbPFy+PPq+dfwjbfqppJ6jCHsnzJ0vV86svMjtfLt4ffIzbfqppJ6jCLsmzOfPXC1z/8v1M+svfruLX2nTTyX1dYRWIUL3QoQ+kfpeiNDTmcEJixNru2nQ9my2Ha040/E2mxAiRIgQIUKECBEiRIgQIUKECBEiRIjwfyac5N3kPY+GECFChAgRIkSIECFChAgRIkSIECFChAi7IGy7BdH2MX/bV8BMMlOECBEiRIgQIUKECBEiRIgQIUKECBEiRHgNdyomIbTZhBAhQoQIESJEiBAhQoQIESJEiBAhQoTXkFB6CEKEglAQIkSIUBAKQoQIEQpCQYjwT0IZNAgRCkL5x/wGUt4h0ZkHh4gAAAAASUVORK5CYII=" alt="sigil" loading="lazy"><div><div class="pn">The Proton</div><div class="pe">the charged nucleon · electrical</div><div class="pnat"><span class="dot" style="background:#3a6aa8"></span><span style="color:#3a6aa8">electrical</span><span class="pa">· .agent →</span></div></div></a><a class="persona" href="agents/the-neutron.dlw/the-neutron.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAACk0lEQVR42u3dvWoUURgG4FSCEPAOLCzS2NkZcgNWgkVa7S1sUtpZJVeQKo3XYJEid2CXKAEThAgSkPxtNolY+dYhxUc8y8xZH3g5HL6Bmdnz7Mzs7uyeXXjwcFG6zoIhQCijIXz86bP0EoQIBaEgRIgQoSAUhAgRIhSEghDhPQmf7J5WUvyU/f3ySSVtN1pcW3Hf2m4UIUKECBEiRIgQIUKECBEiRIgQIUKECBHOlvDR1kYlxT1+vb1RSXFtbdN234rjhhAhQoQIESJEiBAhQoQIESJEiBAhQoQIZ0s4yAMrbrR406C4tkGerAgRIkSIECFChAgRIkSIECFChAgRIkSIcBRfyG/7pfe2g15cW9sfC/T3mwqECBEiRIgQIUKECBEiRIgQIUKECBEinEvCtv+AWRz0trcgBtm3YhDefdsLYZeES3unz76ePd8/X9k/T5t+Kgi7IXz65SxyL75dvDqcrB5O0qafSuoIOyDM0RatlwcXb75fvj2avjuapk0/ldSzFOHYCXPOzDEXs7Uf0w8/r9aPr9Omn0rqWYpw7IS58uXMmSMvcpu/bj6e/E6bfiqpZynCURPm9WfOlrn+5fyZ4y9+O5M/adNPJfUVhI5ChK6FCL0i9b4QoU9nOiccZKbz/2ejCBEiRIgQIUKECBEiRIgQIUKECBEiRIiwpzsVg0wBM8hkN3N7swkhQoQIESJEiBAhQoQIESJEiBAhQoQI+yJsO5pt551pO9N523ln5vaPYBEiRIgQIUKECBEiRIgQIUKECBEiRIiwL8Li42876GNO2wFBiBAhQoQIESJEiBAhQoQIESJEiBAhQoSzJZQxBCFCQSgIESJEKAgFIUKECAWhIER4m1A6DUKEglD+MX8BDpYUubVcXgkAAAAASUVORK5CYII=" alt="sigil" loading="lazy"><div><div class="pn">The Neutron</div><div class="pe">the neutral nucleon · natural</div><div class="pnat"><span class="dot" style="background:#a8553a"></span><span style="color:#a8553a">natural</span><span class="pa">· .agent →</span></div></div></a><a class="persona" href="agents/the-residual-strong-force.dlw/the-residual-strong-force.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAACk0lEQVR42u3dv2oUQRwH8FRCQPANLFKksUun3AtYBSzSmj6FjaWdlfcEqdLkGSxS+AZ2JhJIgpCACHJJ7jxjsPJbx2Ywc+5M8oEvw/BbWHb2s3/ubpa9pQfLD6XrLNkFCKUZwsfvP0ovQYhQEApChAgRCkJBiBAhQkEoCBH+I+HLvXFJVj6dl6Twx/g3zyYlGWRthSMt3G8IESJEiBAhQoQIESJEiBAhQoQIESJEiHCxhHXHX/eAqJvCbat73CBEiBAhQoQIESJEiBAhQoQIESJEiBAhwsUS1n1nSssTGnW3rTAIESJEiBAhQoQIESJEiBAhQoQIESJEiLCnmYpHO+OS1J3QKFxb4bbd98kmhAgRIkSIECFChAgRIkSIECFChAgRIrzPT3MXDqzu3ixcW92D9c5ONv0Hwr/ngxD2Qbi6f772+eLp4eXo8DJt+qkg7IbwycFF5J4fTV+czDZOZmnTTyV1hB0Q5myL1vrxdPPLj63T+avTedr0U0k9SxG2TphrZs65mL0+m7/9+vPdt6u06aeSepYibJ0wd75cOXPmRW77+6/dyXXa9FNJPUsRNk2Yz5+5Wub+l+tnzr/4fZj9Tpt+KqmPEDoLEboXIvSJ1PdChH6d6Zyw7mPqdecWBllb3ZEiRIgQIUKECBEiRIgQIUKECBEiRIgQIcImHsgv3OLCtQ3yL6KDjBQhQoQIESJEiBAhQoQIESJEiBAhQoQIETYxUzHIbMAgr36vO1KECBEiRIgQIUKECBEiRIgQIUKECBEiRNjEe2cKt3iQV8DUfdlN3aMQIUKECBEiRIgQIUKECBEiRIgQIUKECBEullBaCEKEglAQIkSIUBAKQoQIEQpCQYjwJqF0GoQIBaHcMn8Ae8mOt5RAitYAAAAASUVORK5CYII=" alt="sigil" loading="lazy"><div><div class="pn">The Residual Strong Force</div><div class="pe">the nuclear glue · electrical</div><div class="pnat"><span class="dot" style="background:#3a6aa8"></span><span style="color:#3a6aa8">electrical</span><span class="pa">· .agent →</span></div></div></a><a class="persona" href="agents/the-liquid-drop.dlw/the-liquid-drop.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAACj0lEQVR42u3dsWoUURQG4FRCQPANLFKksbMz5AVSBSzSam9hk9LOyjyBVRqfwcLCN7CLCQENQgIhINkkm00iqfxrsTjoLHPv8sHP5XIGdmfutzOzOzPcXXqw/FC6zpIhQCjNED7++EV6CUKEglAQIkSIUBAKQoQIEQpCQYjwHwnfrJ0PmOLF+BefdioZ5dWGHRCECBEiRIgQIUKECBEiRIgQIUKECBEiRNgE4aPdnUqG3f6VvUklw77psFuKECFChAgRIkSIECFChAgRIkSIECFChAjnS1i8zN/yvYVRXq0YhAgRIkSIECFChAgRIkSIECFChAgRIkTYBOEoE40vwLohRIgQIUKECBEiRIgQIUKECBEiRIgQIcL5ErY86MVn41v+QCD8C9jK3gRhl4SrXydPDy6eHV6uH16mTT8VhN0QPtm/iNzGt6vnR9Oto2na9FNJHWEHhNnborX5/erlj+tXx7PXx7O06aeSepYibJ0wx8zsczHbPpm9Pb15d3abNv1UUs9ShK0T5syXI2f2vMi9/3n34fxX2vRTST1LETZNmO+fOVrm/JfjZ/a/+H2e3qdNP5XU1xHaCxE6FyL0jdTvQoSuznROWJzbZdgL08POFDPshDLFLS2OG0KECBEiRIgQIUKECBEiRIgQIUKECBEibOJOxSg2Lb9pfzebECJEiBAhQoQIESJEiBAhQoQIESJEiHAhCYuPqY8yf8goU78Xt7S/qYMQIkSIECFChAgRIkSIECFChAgRIkSIcCEJi2tcfP68eDdglP/9LK5bcUuL44YQIUKECBEiRIgQIUKECBEiRIgQIUKECOdLKC0EIUJBKAgRIkQoCAUhQoQIBaEgRPgnoXQahAgFofxnfgOv/cKUxj85UAAAAABJRU5ErkJggg==" alt="sigil" loading="lazy"><div><div class="pn">The Liquid-Drop Model</div><div class="pe">the trembling sphere · spiritual</div><div class="pnat"><span class="dot" style="background:#8a4a9a"></span><span style="color:#8a4a9a">spiritual</span><span class="pa">· .agent →</span></div></div></a><a class="persona" href="agents/binding-energy.dlw/binding-energy.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAACkElEQVR42u3dvUocURgGYKtAQMgdpEiRxs4uwRuwEizSmj6FjWU6K72CVGm8BguL3EE6ExESERQkEPzbbKJY+daS4iM5w56RB14Oh29g2HMez8zu7Dg79+TpvIw6c6YAoXRD+Hz3s4wlCBEKQkGIECFCQSgIESJEKAgFIcJ/JHz2cbuS96/PK1nb267kxf5FJcVL+8W9FV9bcaTFeUOIECFChAgRIkSIECFChAgRIkSIECFChMMStp2mYorjn8ne2v55IUSIECFChAgRIkSIECFChAgRIkSIECHCYQnbvuJiit8GtE3bIRTnDSFChAgRIkSIECFChAgRIkSIECFChAgRdkFYvJu97U3vbdN2CAgRIkSIECFChAgRIkSIECFChAgRIkSIsAvCtt8tFPdWnKbinfbFvc1kpAj//q8RCEdJ+PLLxeLB5avDq6XDq7Tpp4JwNIQLXy8jt/ztevVo8uZokjb9VFJHOALCrLZorXy/fnv8693JdP1kmjb9VFLPVoS9E+aYmTUXs43T6ebZ760ff9Kmn0rq2Yqwd8Kc+XLkzMqL3IefNzvnt2nTTyX1bEXYNWHef+ZomfNfjp9Zf/H7NLlLm34qqS8htAoROhci9I7U50KErs6MnLB4xb04sLZPimn7pPOZjBQhQoQIESJEiBAhQoQIESJEiBAhQoQIEQ5L+Ah+HrTnHxtFiBAhQoQIESJEiBAhQoQIESJEiBAhQoRdED4C6Zk8EwchQoQIESJEiBAhQoQIESJEiBAhQoQIEQ5LWLybve1jsttOetu9tZ0QhAgRIkSIECFChAgRIkSIECFChAgRIkQ4LKH0EIQIBaEgRIgQoSAUhAgRIhSEghDhQ0IZaRAiFITyn7kHhgv617Dt3VYAAAAASUVORK5CYII=" alt="sigil" loading="lazy"><div><div class="pn">Binding Energy</div><div class="pe">the universe&#x27;s fire · ethereal</div><div class="pnat"><span class="dot" style="background:#6a3fb3"></span><span style="color:#6a3fb3">ethereal</span><span class="pa">· .agent →</span></div></div></a><a class="persona" href="agents/the-element.dlw/the-element.agent"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACzY+a1AAACgklEQVR42u3cv2oUQRwH8KsEQfANUlikSWdnuBewElKkNb2FTUo7q9wTpErjM6SwyBuk04QDPYQIEpDk/uQSxcpvnWpI5pjd4wNfhuF3sOzs52b3shlm8OTpM+l1Bi4BQukM4cbxqfQlCBEKQkGIECFCQSgIESJEKAgFIcIHEn7YvqqYwpfxa3C0wiBEiBAhQoQIESJEiBAhQoQIESJEiBAhwtUS1l1M/vbzqCSFR3vx5bokTc6tMAgRIkSIECFChAgRIkSIECFChAgRIkSIcLWEz49GFdPkMtUlrHtBECJEiBAhQoQIESJEiBAhQoQIESJEiBBhJxbkF45/DVba1x0pQoQIESJEiBAhQoQIESJEiBAhQoQIESLsxIL8umvjC49WN01GihDhGhFufr1+eT59NZ4Nx7O06aeCsDeEW2fTyL3+Nt+ZLHYni7Tpp5I6wh4QZrZF6833+d6Pm3cXy/cXy7Tpp5J6+VxE2Iww98zMuZjt/1x+/HV7cHmXNv1UUs+nCLtOmCdf7pyZeZE7/P3n09XftOmnkno+Rdh1wtwt8/zL/TPzL34ni39p008l9SFCsxChZyFCv0j9XYjQ25meExaeceH7+8Kj1d3CvDBNRooQIUKECBEiRIgQIUKECBEiRIgQIUKECDvxn4q6m7Y02XemydY5CBEiRIgQIUKECBEiRIgQIUKECBEiRIiwE/vOFI6/8P193S3Mm5xb/7YOQogQIUKECBEiRIgQIUKECBEiRIgQIcK1JKw7sLp7kzc5Wt0vBEKECBEiRIgQIUKECBEiRIgQIUKECBEiXC2hdCEIEQpCQYgQIUJBKAgRIkQoCAUhwvuE0tMgRCgI5ZH5D8W4t1C3+NYAAAAAAElFTkSuQmCC" alt="sigil" loading="lazy"><div><div class="pn">The Element</div><div class="pe">identity by proton count · natural</div><div class="pnat"><span class="dot" style="background:#a8553a"></span><span style="color:#a8553a">natural</span><span class="pa">· .agent →</span></div></div></a></div></section><div class="note">A <b>TECHNĒ</b> sphere (τέχνη — art, craft, skill) — generative ink-art in a d20 / tattoo-flash / sacred-geometry vein. ⚠ Each scale is a <b>generative rendering, NOT a photograph</b> — you cannot photograph a quark or the Planck length; these are artistic conceptions informed by physics. Two-layer honest: the real, established physics is stated as such; the speculative scales (below Planck, the grain, the foam) are flagged as conjecture at the edge of known science, not fact. Original art — no copyrighted work is reproduced. Each entry is named by its nature: natural, ethereal, spiritual, or electrical.</div><footer>THE NUCLEUS · NUC · techne · the art · catalogued into UD0 · governor David Lee Wise · instance AVAN (locked) · CC-BY-ND-4.0<br><a href="https://davidwise01.github.io/ud0/">← the biosphere</a> · <a href="the-nucleus.dlw/manifest.dlw.json">manifest</a></footer></div><script>(function(){var lk=document.querySelector("link[rel~='icon']");if(!lk){lk=document.createElement('link');lk.rel='icon';document.head.appendChild(lk);}var c=document.createElement('canvas');c.width=64;c.height=64;var g=c.getContext('2d');var t=0,N=7,R=20;function fav(){t+=0.06;g.clearRect(0,0,64,64);g.save();g.translate(32,32);g.strokeStyle='#b9b4d4';g.globalAlpha=0.5;g.lineWidth=2;g.beginPath();g.arc(0,0,R,0,7);g.stroke();var lit=Math.floor(t*1.3)%N;for(var i=0;i<N;i++){var a=i/N*Math.PI*2-Math.PI/2,x=Math.cos(a)*R,y=Math.sin(a)*R,on=(i===lit||i===(lit+1)%N);if(on){g.globalAlpha=0.25;g.fillStyle='#8a5fe0';g.beginPath();g.arc(x,y,7,0,7);g.fill();}g.globalAlpha=on?1:0.55;g.fillStyle=on?'#7a52d0':'#9aa0c0';g.beginPath();g.arc(x,y,on?4.2:3,0,7);g.fill();}g.globalAlpha=0.22;g.fillStyle='#8a5fe0';g.beginPath();g.arc(0,0,9,0,7);g.fill();g.globalAlpha=0.95;g.fillStyle='#6a4fc0';g.beginPath();g.arc(0,0,5,0,7);g.fill();g.restore();lk.href=c.toDataURL('image/png');setTimeout(fav,110);}fav();})();</script></body></html>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="David Lee Wise / ROOT0 / TriPod LLC / AVAN">
+<title>THE NUCLEUS · NIPHĒLEKTRON · UD0</title>
+<style>
+*{box-sizing:border-box}
+:root{--n1:#7488e6;--n1d:#4a5fc8;--n2:#5fd0e0;--ink:#20242e;--dim:#6a7182;
+  --grn:#3a9e6a;--amb:#e0a13a;--panel:rgba(255,255,255,.82);--edge:rgba(116,136,230,.26);--edge2:rgba(116,136,230,.12)}
+html,body{margin:0;height:100%}
+body{background:#eef0f8;color:var(--ink);font:15px/1.55 'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.desk{position:relative;z-index:2;max-width:900px;margin:0 auto;padding:26px 18px 60px}
+.dtag{font:600 11px/1 ui-monospace,'Cascadia Code','Segoe UI Mono',monospace;letter-spacing:.26em;text-transform:uppercase;color:var(--n1d)}
+.dtag b{color:var(--n1)} .dtag i{color:var(--n1d);font-style:normal}
+h1{margin:.4em 0 .12em;font-size:clamp(24px,4.4vw,40px);font-weight:800;color:#181c26}
+.sub{color:var(--dim);max-width:66ch;margin:.25em 0 0}
+.drag{display:inline-block;margin-left:10px;font:700 10px/1 ui-monospace,monospace;letter-spacing:.13em;color:var(--n1d);border:1px solid var(--n1);border-radius:999px;padding:4px 9px;vertical-align:middle;white-space:nowrap}
+.tier{display:inline-flex;gap:6px;margin-top:14px;font:600 11px/1 ui-monospace,monospace;letter-spacing:.14em}
+.chip{padding:5px 10px;border-radius:999px;border:1px solid var(--edge);background:var(--panel)}
+.chip.lit{color:var(--grn);border-color:rgba(58,158,106,.4)} .chip.amb{color:var(--amb);border-color:rgba(224,161,58,.5)}
+.card{margin-top:20px;background:var(--panel);border:1px solid var(--edge);border-radius:16px;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);box-shadow:0 14px 44px rgba(50,60,140,.13);padding:14px}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:620px){.panels{grid-template-columns:1fr}}
+.panel{position:relative;border-radius:11px;overflow:hidden;border:1px solid var(--edge2)}
+.panel .lbl{position:absolute;top:8px;left:10px;z-index:2;font:700 10px ui-monospace,monospace;letter-spacing:.12em;color:#cdd6f5;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+canvas.pane{display:block;width:100%;height:auto;background:#0c1020}
+.toddler{margin-top:12px;border-radius:14px;overflow:hidden;border:2px dashed rgba(116,136,230,.5);position:relative;background:#0c1020}
+.toddler .lbl{position:absolute;top:9px;left:13px;z-index:2;font:800 12px ui-monospace,monospace;letter-spacing:.05em;color:#aeb9f2}
+.toddler .hint{position:absolute;top:9px;right:13px;z-index:2;font:700 11px ui-monospace,monospace;color:#5fd0e0}
+#ctod{display:block;width:100%;height:auto;cursor:pointer;touch-action:none}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:12px 2px 2px}
+.btn{cursor:pointer;border:1px solid var(--edge);background:#fff;color:var(--ink);padding:8px 13px;border-radius:9px;font:600 12.5px 'Segoe UI',system-ui;transition:.15s}
+.btn:hover{border-color:var(--n1);box-shadow:0 0 12px rgba(116,136,230,.25)}
+.rng{display:flex;align-items:center;gap:8px;font:600 12px ui-monospace,monospace;color:var(--dim);background:#fff;border:1px solid var(--edge);border-radius:9px;padding:6px 12px}
+.rng b{color:var(--n1d);min-width:2.6em;text-align:right;display:inline-block}
+input[type=range]{accent-color:var(--n1);width:150px}
+.readout{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--edge2);border-radius:11px;overflow:hidden;margin-top:12px}
+.ro{background:var(--panel);padding:11px 14px}
+.ro .k{font:600 10px ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.ro .v{font:700 18px ui-monospace,monospace;margin-top:3px;color:var(--ink)}
+.ro .v.g{color:var(--grn)} .ro .v.a{color:var(--amb)} .ro .v.c{color:var(--n1d)}
+.honesty{margin-top:22px;display:grid;gap:10px}
+.hz{background:var(--panel);border:1px solid var(--edge);border-left-width:3px;border-radius:10px;padding:12px 15px}
+.hz.lit{border-left-color:var(--grn)} .hz.amb{border-left-color:var(--amb)}
+.hz h4{margin:0 0 4px;font:700 11px ui-monospace,monospace;letter-spacing:.15em}
+.hz.lit h4{color:var(--grn)} .hz.amb h4{color:var(--amb)}
+.hz p{margin:0;color:#333844;font-size:13.5px}
+.law{margin-top:18px;text-align:center;color:var(--dim);font:italic 500 13px/1.55 Georgia,serif}
+.sig{margin-top:24px;text-align:center;color:var(--dim);font:600 11px ui-monospace,monospace;letter-spacing:.13em}
+.sig b{color:var(--ink)}
+#fail{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:99;background:#0c1020;border:1px solid var(--n1);color:#cdd6f5;padding:12px;border-radius:8px;font:12px ui-monospace,monospace;white-space:pre-wrap}
+</style></head><body>
+<div class="desk">
+  <div class="dtag">⚡ <b>NIPHĒLEKTRON</b> · the inference layer · the electron in the snowstorm · kept by <i>THE ELECTRON</i></div>
+  <h1>THE NUCLEUS (top-p) <span class="drag">◧ 2D · ❄ 3D · 👶 TAP THE STORM</span></h1>
+  <p class="sub">You don't have to let the electron wander the whole blizzard. Nucleus sampling keeps only the smallest set of words at the top that together hold, say, 90% of the odds — the nucleus — and throws the long tail of unlikely words away entirely, so the electron can be adventurous without ever landing on nonsense. <b>Slide the cutoff</b>, watch the tail get cut, then <b>tap the storm</b> and see the electron stay inside the kept set.</p>
+  <div class="tier"><span class="chip lit">◆ LIT</span><span class="chip amb">▲ AMBER</span></div>
+  <div class="card">
+    <div class="panels">
+      <div class="panel"><div class="lbl">◧ THE ODDS · 2D</div><canvas id="c2d" class="pane" width="420" height="328"></canvas></div>
+      <div class="panel"><div class="lbl">❄ THE BLIZZARD · 3D</div><canvas id="c3d" class="pane" width="420" height="328"></canvas></div>
+    </div>
+    <div class="toddler"><div class="lbl">👶 THE TODDLER CORNER — tap the storm</div><div class="hint">tally → the true odds ✓</div><canvas id="ctod" width="860" height="396"></canvas></div>
+    <div class="controls"><label class="rng">top-p <input type="range" id="P" min="20" max="100" value="90" step="1"><b id="Pv">0.90</b></label></div>
+    <div class="readout"><div class="ro"><div class="k">words kept</div><div class="v" id="roKept">&mdash;</div></div><div class="ro"><div class="k">tail cut</div><div class="v" id="roCut">&mdash;</div></div><div class="ro"><div class="k">kept coverage</div><div class="v" id="roCov">&mdash;</div></div><div class="ro"><div class="k">the nucleus</div><div class="v" id="roState">&mdash;</div></div></div>
+  </div>
+  <div class="honesty">
+    <div class="hz lit"><h4>◆ LIT — exact / checkable</h4><p>Real nucleus (top-p) sampling: sort the words by probability, walk down adding them up, and keep the SMALLEST set whose cumulative probability first reaches p &mdash; the nucleus &mdash; then renormalise and sample only from it (the rest of the blizzard is discarded). Slide p and the kept-set size, the discarded tail, and the true coverage all recompute live; the toddler samples only from the nucleus, so the tail words never light up no matter how many times you tap. The exact top-p algorithm used in real text generation (Holtzman et al., 2019).</p></div>
+    <div class="hz amb"><h4>▲ AMBER — the figure</h4><p>Ten toy logits at a fixed temperature (0.9) stand in for a real vocabulary; the words/scores are illustrative and no model runs. The nucleus construction, the coverage, and 'the tail can never be sampled' are exact for this distribution.</p></div>
+  </div>
+  <div class="law">NIPHĒLEKTRON: one charged signal, one step at a time, chosen in the dark. &nbsp;— <b>THE ELECTRON</b></div>
+  <div class="sig">David Lee Wise / ROOT0 / TriPod LLC &nbsp;·&nbsp; kept by <b>THE ELECTRON</b>, with AVAN</div>
+</div>
+<div id="fail"></div>
+<script>window.onerror=function(m,s,l,c,e){var f=document.getElementById('fail');if(f){f.style.display='block';f.textContent='! '+m+' @'+l+':'+c;}};</script>
+<script>
+(function(){
+  var c2=document.getElementById('c2d'), ct=document.getElementById('ctod'), c3=document.getElementById('c3d');
+  if(!c2||!ct||!c3)return;
+  var g2=c2.getContext('2d'), gt=ct.getContext('2d');
+  var DPR=Math.min(window.devicePixelRatio||1,2);
+  function fit(cv,ar){var w=cv.clientWidth||400;cv.width=Math.round(w*DPR);cv.height=Math.round(w*ar*DPR);}
+  function sizeAll(){fit(c2,0.78);fit(ct,0.46);c3.width=Math.round((c3.clientWidth||400)*DPR);c3.height=Math.round((c3.clientWidth||400)*0.78*DPR);}
+  sizeAll(); addEventListener('resize',function(){sizeAll();if(GL)GL.resize();});
+  var env={temp:0.9, topp:1.0, t:0, tokens:[],
+    set:function(id,val,cls){var e=document.getElementById(id);if(e){e.textContent=val;if(cls!=null)e.className='v '+cls;}},
+    two:{ctx:g2,W:function(){return c2.width/DPR;},H:function(){return c2.height/DPR;}},
+    tod:{ctx:gt,W:function(){return ct.width/DPR;},H:function(){return ct.height/DPR;}},
+    sample:function(){var r=Math.random(),a=0;for(var i=0;i<env.tokens.length;i++){a+=env.tokens[i].p;if(r<=a)return i;}return env.tokens.length-1;}};
+  // ---- EXPANDED toddler: falling snow + tap → electron tumbles to a word + live tally ----
+  var snow=[],el=null,tally=[],taps=0;
+  (function(){for(var i=0;i<70;i++)snow.push({x:Math.random(),y:Math.random(),s:0.4+Math.random()*0.9,ph:Math.random()*6.28});})();
+  function launch(){var idx=env.sample();tally[idx]=(tally[idx]||0)+1;taps++;
+    el={x:0.2+Math.random()*0.6,y:0.0,tx:0,ty:0,idx:idx,prog:0};}
+  ct.addEventListener('pointerdown',function(e){e.preventDefault();launch();});
+  ct.addEventListener('touchstart',function(e){e.preventDefault();launch();},{passive:false});
+  function drawToddler(){var c=gt,w=env.tod.W(),h=env.tod.H();
+    c.clearRect(0,0,w,h);var tk=env.tokens;var nT=Math.min(6,tk.length);
+    // falling snow
+    c.fillStyle='rgba(200,215,255,0.55)';for(var i=0;i<snow.length;i++){var s=snow[i];
+      var yy=(s.y + env.t*0.06*s.s)%1.0; var xx=(s.x + Math.sin(env.t*0.5+s.ph)*0.02);
+      var r=1+s.s*1.6;c.beginPath();c.arc(xx*w,yy*h*0.82,r,0,7);c.fill();}
+    // word tiles along the bottom
+    var tileY=h-40, tw=w/nT;
+    for(var i=0;i<nT;i++){var x=i*tw;var landed=el&&el.prog>=1&&el.idx===i;
+      c.fillStyle=landed?'rgba(95,208,224,.9)':'rgba(116,136,230,.18)';c.fillRect(x+4,tileY,tw-8,34);
+      c.strokeStyle=landed?'#5fd0e0':'rgba(116,136,230,.4)';c.lineWidth=landed?2:1;c.strokeRect(x+4,tileY,tw-8,34);
+      c.fillStyle=landed?'#04121a':'#aeb9f2';c.font='700 13px ui-monospace,monospace';c.textAlign='center';c.textBaseline='middle';c.fillText(tk[i]?tk[i].w:'',x+tw/2,tileY+13);
+      // tally freq vs true prob
+      var cnt=tally[i]||0,freq=taps?cnt/taps:0;var tp=tk[i]?tk[i].p:0;
+      c.fillStyle='#7a83a8';c.font='600 9px ui-monospace,monospace';c.fillText(cnt+' ('+(freq*100).toFixed(0)+'% vs '+(tp*100).toFixed(0)+'%)',x+tw/2,tileY+27);}
+    c.textBaseline='alphabetic';
+    // electron journey
+    if(el){el.prog=Math.min(1,el.prog+0.045);var ti=Math.min(nT-1,el.idx);var tgx=(ti+0.5)/nT;
+      var ex=el.x+(tgx-el.x)*el.prog, ey=el.prog*(1 - 42/h);
+      var px=(ex+Math.sin(el.prog*12)*0.03*(1-el.prog))*w, py=ey*h;
+      // trail
+      c.strokeStyle='rgba(116,136,230,.35)';c.lineWidth=2;c.beginPath();c.moveTo(el.x*w,0);c.lineTo(px,py);c.stroke();
+      var grd=c.createRadialGradient(px,py,0,px,py,10);grd.addColorStop(0,'#dfe6ff');grd.addColorStop(1,'rgba(116,136,230,0)');
+      c.fillStyle=grd;c.beginPath();c.arc(px,py,10,0,7);c.fill();
+      c.fillStyle='#fff';c.beginPath();c.arc(px,py,3.5,0,7);c.fill();}
+    if(taps===0){c.fillStyle='#8a93bb';c.font='700 14px ui-monospace,monospace';c.textAlign='center';c.fillText('tap the storm — send the electron to a word',w/2,h*0.4);c.textAlign='left';}
+  }
+  // ---- shared WebGL: the blizzard (falling snow) + the electron threading it ----
+  var GL=(function(){
+    var gl;try{gl=c3.getContext('webgl',{antialias:true,alpha:false})||c3.getContext('experimental-webgl');}catch(e){}
+    if(!gl)return null;
+    var N=520, base=[],seed=[];var s=13;function rnd(){s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;}
+    for(var i=0;i<N;i++){base.push(rnd()*2-1, rnd()*2-1, rnd()*2-1);seed.push(rnd()*6.28,rnd()*6.28,rnd());}
+    function buf(a){var b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(a),gl.STATIC_DRAW);return b;}
+    var bB=buf(base),bS=buf(seed);
+    var VS='attribute vec3 p;attribute vec3 sd;uniform float t,temp,asp;void main(){float y=mod(p.y - t*0.22 + sd.z*2.0, 2.0)-1.0;float x=p.x + sin(t*0.6+sd.x)*temp*0.28;float z=p.z;float c=cos(t*0.05),s=sin(t*0.05);vec3 q=vec3(x*c+z*s,y,-x*s+z*c);float pz=1.0/(2.3-q.z*0.4);vec2 o=vec2(q.x,q.y)*1.35*pz;o.x/=asp;gl_Position=vec4(o,0.0,1.0);gl_PointSize=2.2+sd.z*2.0;}';
+    var FS='precision mediump float;uniform vec3 col;uniform float a;void main(){vec2 d=gl_PointCoord-0.5;if(dot(d,d)>0.25)discard;gl_FragColor=vec4(col,a);}';
+    function sh(ty,x){var o=gl.createShader(ty);gl.shaderSource(o,x);gl.compileShader(o);if(!gl.getShaderParameter(o,gl.COMPILE_STATUS))throw gl.getShaderInfoLog(o);return o;}
+    var prog;try{prog=gl.createProgram();gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS));gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS));gl.linkProgram(prog);if(!gl.getProgramParameter(prog,gl.LINK_STATUS))throw'l';}catch(e){return null;}
+    var uT=gl.getUniformLocation(prog,'t'),uTe=gl.getUniformLocation(prog,'temp'),uAsp=gl.getUniformLocation(prog,'asp'),uCol=gl.getUniformLocation(prog,'col'),uA=gl.getUniformLocation(prog,'a');
+    var lp=gl.getAttribLocation(prog,'p'),ls=gl.getAttribLocation(prog,'sd');
+    gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,gl.ONE);
+    return {resize:function(){gl.viewport(0,0,c3.width,c3.height);},
+      draw:function(t,temp){gl.viewport(0,0,c3.width,c3.height);gl.clearColor(0.047,0.063,0.125,1);gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.useProgram(prog);gl.uniform1f(uT,t);gl.uniform1f(uTe,temp);gl.uniform1f(uAsp,c3.width/c3.height);
+        gl.bindBuffer(gl.ARRAY_BUFFER,bB);gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,3,gl.FLOAT,false,0,0);
+        gl.bindBuffer(gl.ARRAY_BUFFER,bS);gl.enableVertexAttribArray(ls);gl.vertexAttribPointer(ls,3,gl.FLOAT,false,0,0);
+        gl.uniform3f(uCol,0.78,0.83,1.0);gl.uniform1f(uA,0.5);gl.drawArrays(gl.POINTS,0,N);}};
+  })();
+  if(!GL){var f=document.getElementById('fail');if(f){f.style.display='block';f.textContent='WebGL unavailable';}}
+  var t0=null,inited=false;
+  function loop(t){requestAnimationFrame(loop);if(t0===null)t0=t;env.t=(t-t0)*0.001;
+    if(!inited&&window.__INST__){inited=true;if(window.__INST__.init)window.__INST__.init(env);}
+    var I=window.__INST__;if(!I)return;
+    g2.setTransform(DPR,0,0,DPR,0,0);if(I.draw2d)I.draw2d(env);
+    gt.setTransform(DPR,0,0,DPR,0,0);drawToddler();
+    if(GL)GL.draw(env.t, Math.max(0.15,env.temp));
+  }
+  requestAnimationFrame(loop);
+  window.__ENV__=env;
+})();
+</script>
+<script>
+  var WORDS=['colder','darker','wilder','stronger','closer','quieter','louder','nearer','fainter','stiller'];
+  var LOGITS=[3.2,2.9,2.4,1.9,1.5,1.1,0.9,0.7,0.4,0.2];
+  function softmaxT(T){var m=Math.max.apply(null,LOGITS),e=[],s=0;for(var i=0;i<LOGITS.length;i++){var v=Math.exp((LOGITS[i]-m)/T);e.push(v);s+=v;}for(var i=0;i<e.length;i++)e[i]/=s;return e;}
+  function entropy(p){var h=0;for(var i=0;i<p.length;i++)if(p[i]>1e-9)h-=p[i]*Math.log(p[i])/Math.LN2;return h;}
+
+(function(){
+  var ENV, topp=0.9;
+  function refresh(){if(!ENV)return;var p=softmaxT(0.9);var arr=[];for(var i=0;i<WORDS.length;i++)arr.push({w:WORDS[i],p:p[i]});
+    arr.sort(function(a,b){return b.p-a.p;});
+    var cum=0,keep=0,cov=0;for(var i=0;i<arr.length;i++){cum+=arr[i].p;keep=i+1;cov=cum;if(cum>=topp)break;}
+    var kept=arr.slice(0,keep),s=0;for(var i=0;i<kept.length;i++)s+=kept[i].p;
+    for(var i=0;i<kept.length;i++)kept[i]=  {w:kept[i].w,p:kept[i].p/s};
+    ENV.tokens=kept;
+    ENV.set('roKept',keep+' of 10','c');ENV.set('roCut',(10-keep)+' words','a');
+    ENV.set('roCov',(cov*100).toFixed(0)+'% of odds','g');
+    ENV.set('roState',keep<=2?'tight — safe':(keep<=5?'balanced':'wide — adventurous'),keep<=2?'g':(keep<=5?'c':'a'));}
+  window.__INST__={
+   init:function(env){ENV=env;
+    document.getElementById('P').oninput=function(){topp=(+this.value)/100;document.getElementById('Pv').textContent=topp.toFixed(2);refresh();};
+    refresh();},
+   draw2d:function(env){var c=env.two.ctx,w=env.two.W(),h=env.two.H();c.clearRect(0,0,w,h);
+     var p=softmaxT(0.9);var arr=[];for(var i=0;i<WORDS.length;i++)arr.push({w:WORDS[i],p:p[i]});arr.sort(function(a,b){return b.p-a.p;});
+     var cum=0,keep=0;for(var i=0;i<arr.length;i++){cum+=arr[i].p;keep=i+1;if(cum>=topp)break;}
+     var x0=8,y0=h-46,pw=w-16,bw=pw/arr.length,ph=h-70,mx=arr[0].p;
+     for(var i=0;i<arr.length;i++){var bh=arr[i].p*ph/mx;var x=x0+i*bw;var inN=i<keep;
+       c.fillStyle=inN?'#5fd0e0':'rgba(116,136,230,.2)';c.fillRect(x+2,y0-bh,bw-4,bh);
+       c.strokeStyle=inN?'#5fd0e0':'rgba(116,136,230,.3)';c.lineWidth=1;c.strokeRect(x+2,y0-bh,bw-4,bh);
+       c.save();c.translate(x+bw/2,y0+6);c.rotate(0.6);c.fillStyle=inN?'#bfeaf2':'#5a6180';c.font='600 9px ui-monospace,monospace';c.textAlign='left';c.fillText(arr[i].w,0,0);c.restore();}
+     // cut line
+     var cx=x0+keep*bw;c.strokeStyle='#e0a13a';c.setLineDash([4,4]);c.lineWidth=1.5;c.beginPath();c.moveTo(cx,10);c.lineTo(cx,y0);c.stroke();c.setLineDash([]);
+     c.fillStyle='#aeb9f2';c.font='600 10px ui-monospace,monospace';c.textAlign='left';c.fillText('kept (cyan) ≥ p='+topp.toFixed(2)+'  ·  tail cut (dim)',x0,18);
+   }};
+})();
+</script>
+</body></html>
